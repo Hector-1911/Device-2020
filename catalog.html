@@ -28,7 +28,7 @@
                <!-- Поиск -->
                <form class="header__search-form" action="" method="GET">
                   <label for="search"></label>
-                  <input type="text" id="search">
+                  <input name="search" type="text" id="search" placeholder="Поиск по сайту">
                </form>
                <!-- Личный кабинет -->
                <ul class="header__user">
@@ -157,7 +157,7 @@
                            </li>
                         </ul>
                      </fieldset>
-                     <button class="catalog__form-btn" type="submit">Показать</button>
+                     <button class="catalog__form-btn button" type="submit">Показать</button>
                   </form>
                </section>
                <!-- Сортировка и товары -->
@@ -168,7 +168,7 @@
                      <h4 class="catalog__sort-title">Сортировка:</h4>
                      <ul class="catalog__sort-list">
                         <li class="catalog__sort-item">
-                           <button class="catalog__sort-btn" type="button">По цене</button>
+                           <button class="catalog__sort-btn catalog__sort-btn--active" type="button">По цене</button>
                         </li>
                         <li class="catalog__sort-item">
                            <button class="catalog__sort-btn" type="button">По типу</button>
@@ -187,43 +187,43 @@
                      <!-- Список товаров -->
                      <ul class="catalog__products-list">
                         <li class="catalog__products-item">
-                              <div class="catalog__products-img">
-                                 <img src="img/item-1.jpg" width="360" height="380" alt="">
-                              </div>
-                              <div class="catalog__products-name">
-                                 <a class="catalog__products-link" href="">Любительская селфи-палка</a>
-                                 <span class="catalog__products-price">500 руб.</span>
-                              </div>
+                           <div class="catalog__products-img">
+                              <img src="img/item-1.jpg" width="360" height="380" alt="">
+                           </div>
+                           <div class="catalog__products-name">
+                              <a class="catalog__products-link" href="">Любительская селфи-палка</a>
+                              <span class="catalog__products-price">500 руб.</span>
+                           </div>
                         </li>
                         <li class="catalog__products-item">
-                              <div class="catalog__products-img">
-                                 <img src="img/item-2.jpg" width="360" height="380" alt="">
-                              </div>
-                              <div class="catalog__products-name">
-                                 <a class="catalog__products-link" href="">Профессиональная селфи-палка</a>
-                                 <span class="catalog__products-price">1 500 руб.</span>
-                              </div>
+                           <div class="catalog__products-img">
+                              <img src="img/item-2.jpg" width="360" height="380" alt="">
+                           </div>
+                           <div class="catalog__products-name">
+                              <a class="catalog__products-link" href="">Профессиональная селфи-палка</a>
+                              <span class="catalog__products-price">1 500 руб.</span>
+                           </div>
                         </li>
                         <li class="catalog__products-item">
-                              <div class="catalog__products-img">
-                                 <img src="img/item-3.jpg" width="360" height="380" alt="">
-                              </div>
-                              <div class="catalog__products-name">
-                                 <a class="catalog__products-link" href="">Непотопляемая селфи-палка</a>
-                                 <span class="catalog__products-price">2 500 руб.</span>
-                              </div>
+                           <div class="catalog__products-img">
+                              <img src="img/item-3.jpg" width="360" height="380" alt="">
+                           </div>
+                           <div class="catalog__products-name">
+                              <a class="catalog__products-link" href="">Непотопляемая селфи-палка</a>
+                              <span class="catalog__products-price">2 500 руб.</span>
+                           </div>
                         </li>
                         <li class="catalog__products-item">
-                              <div class="catalog__products-img">
-                                 <img src="img/item-4.jpg" width="360" height="380" alt="">
-                              </div>
-                              <div class="catalog__products-name">
-                                 <a class="catalog__products-link" href="">Селфи-палка «Следуй за мной»</a>
-                                 <span class="catalog__products-price">4 900 руб.</span>
-                              </div>
+                           <div class="catalog__products-img">
+                              <img src="img/item-4.jpg" width="360" height="380" alt="">
+                           </div>
+                           <div class="catalog__products-name">
+                              <a class="catalog__products-link" href="">Селфи-палка «Следуй за мной»</a>
+                              <span class="catalog__products-price">4 900 руб.</span>
+                           </div>
                         </li>
                      </ul>
-                     <!-- Навигация по страницам товаров -->
+                     <!-- Пагинатор -->
                      <div class="catalog__paginator">
                         <h2 class="visually-hidden">Навигация по страницам товаров</h2>
                         <button class="catalog__paginator-btn" type="button">Назад</button>

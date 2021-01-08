@@ -34,6 +34,7 @@ a {
    vertical-align: middle;
    color: #000;
    text-transform: uppercase;
+   letter-spacing: 5px;
 
    border: none;
 }
@@ -95,6 +96,7 @@ a {
 
 .header__navigation-link {
    font: inherit;
+   letter-spacing: 5px;
 
    color: #000;
 }
@@ -252,6 +254,7 @@ a {
 .footer__services-link {
    font: inherit;
 
+   letter-spacing: 4px;
    color: #fff;
    text-transform: uppercase;
 }
@@ -289,4 +292,145 @@ a {
 
 .footer__tel {
    color: #fff;
+}
+
+/* --Страница каталога-- */
+
+/* -Основной контент- */
+
+/* Хлебные крошки */
+.catalog-nav__title {
+   font-size: 47px;
+   line-height: 48px;
+}
+
+.catalog-nav__list {
+   padding: 0;
+
+   list-style: none;
+}
+
+.catalog-nav__link {
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 14px;
+   line-height: 24px;
+   font-weight: 300;
+   color: rgba(0, 0, 0, 0.4);
+}
+
+/* Каталог товаров */
+.catalog__filter-title {
+   font-size: 16px;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+}
+
+/* Фильтр каталого */
+.catalog__form fieldset {
+   border: none;
+}
+
+.catalog__form-color-menu {
+   padding: 0;
+
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 14px;
+   line-height: 40px;
+   font-weight: 300;
+
+   list-style: none;
+}
+
+.catalog__form-bluetooth-menu {
+   padding: 0;
+
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 14px;
+   line-height: 40px;
+   font-weight: 300;
+
+   list-style: none;
+}
+
+.catalog__form-btn {
+   background-color: transparent;
+}
+
+/* Сортировка и товары */
+
+/* Сортировка */
+.catalog__sort-title {
+   font-size: 16px;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+}
+
+.catalog__sort-list {
+   padding: 0;
+
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 14px;
+   line-height: 18px;
+   font-weight: 400;
+
+   list-style: none;
+}
+
+.catalog__sort-btn {
+   color: rgba(0, 0, 0, 0.4);
+
+   border: none;
+   background-color: transparent;
+}
+
+.catalog__sort-btn--active {
+   color: #000;
+}
+
+/* Товары */
+
+/* Список товаров */
+.catalog__products-list {
+   padding: 0;
+
+   list-style: none;
+}
+
+.catalog__products-link {
+   color: #000;
+}
+
+.catalog__products-price {
+   font-family: "Gilroy_Light", "Arial", sans-serif;
+
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 300;
+   color: rgba(0, 0, 0, 0.4);
+}
+
+/* Пагинатор */
+.catalog__paginator {
+   background-color: #ebebeb;
+}
+
+.catalog__paginator button {
+   font: inherit;
+
+   font-size: 16px;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+
+   border: none;
+   background-color: transparent;
+}
+
+.catalog__paginator-list {
+   padding: 0;
+
+   list-style: none;
 }
