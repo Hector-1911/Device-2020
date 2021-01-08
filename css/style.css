@@ -1,0 +1,292 @@
+/* --Глобальные стили-- */
+*, *::before, *::after {
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+
+   font-family: "Gilroy_ExtraBold", "Arial", sans-serif;
+
+   font-size: 18px;
+   line-height: 24px;
+   font-weight: 700;
+   color: #000;
+}
+
+img {
+   max-width: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+.button {
+   font: inherit;
+
+   text-align: center;
+   vertical-align: middle;
+   color: #000;
+   text-transform: uppercase;
+
+   border: none;
+}
+
+/* --Стили помошники-- */
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+/* ----- */
+
+/* --Главная страница-- */
+
+/* -Шапка- */
+
+/* Поиск и личный кабинет */
+.header__top-row {
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 300;
+}
+
+/* Поиск */
+.header__search-form input[name="search"] {
+   font: inherit;
+}
+
+/* Личный кабинет */
+.header__user {
+   padding: 0;
+
+   list-style: none;
+}
+
+.header__user-button {
+   font: inherit;
+
+   border: none;
+   background-color: transparent;
+}
+
+/* Навигация */
+.header__navigation-menu {
+   padding: 0;
+
+   text-transform: uppercase;
+
+   list-style: none;
+}
+
+.header__navigation-link {
+   font: inherit;
+
+   color: #000;
+}
+
+/* -Основной контент- */
+
+/* Товар */
+
+/* Описание товара */
+.product__title {
+   font-size: 47px;
+   line-height: 56px;
+}
+
+.product__desc {
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 300;
+}
+
+/* Слайдер */
+
+/* Характеристики товара */
+.product__table {
+   padding: 0;
+
+   list-style: none;
+}
+
+.product__table-stat {
+   font-family: "Gilroy_Light", "Arial", sans-serif;
+
+   font-size: 36px;
+   line-height: 48px;
+   font-weight: 300;
+}
+
+.product__table-type {
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 13px;
+   line-height: 20px;
+   font-weight: 300;
+}
+
+/* Навигация по товарам */
+.product-type__menu {
+   padding: 0;
+
+   list-style: none;
+}
+
+.product-type__img {
+   background-color: #f7e296;
+}
+
+.product-type__title {
+   font: inherit;
+
+   color: #000;
+}
+
+/* Услуги */
+
+/* Слайдер */
+.services__slider {
+   padding: 0;
+
+   list-style: none;
+}
+
+.services__slider-btn {
+   background-color: transparent;
+}
+
+/* Инфо */
+.services__content-title {
+   font-size: 47px;
+   line-height: 48px;
+}
+
+.services__content-text {
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 300;
+}
+
+/* Производители */
+.manufacturers__list {
+   padding: 0;
+
+   list-style: none;
+}
+
+/* Информация о нас */
+.about-us h3 {
+   font-size: 47px;
+   line-height: 48px;
+}
+
+.about-us p {
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 300;
+}
+
+/* О нас */
+.about__delivery {
+   padding: 0;
+
+   font-size: 16px;
+   line-height: 40px;
+
+   list-style: none;
+}
+
+.about__delivery-link {
+   color: #000;
+}
+
+/* Контакты */
+.about-us__contacts-btn {
+   background-color: transparent;
+}
+
+/* -Подвал- */
+.footer {
+   color: #fff;
+
+   background-color: #464646;
+}
+
+/* Логотип и адрес компании */
+.footer__address {
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 300;
+}
+
+/* Услуги */
+.footer__services {
+   padding: 0;
+
+   list-style: none;
+}
+
+.footer__services-link {
+   font: inherit;
+
+   color: #fff;
+   text-transform: uppercase;
+}
+
+/* Социальные сети */
+.footer__socials {
+   padding: 0;
+
+   list-style: none;
+}
+
+/* Личный кабинет и телефон компании */
+.footer__right-col {
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 300;
+}
+
+.footer__user {
+   padding: 0;
+
+   list-style: none;
+}
+
+.footer__user-btn {
+   font: inherit;
+
+   color: #fff;
+
+   border: none;
+   background-color: transparent;
+}
+
+.footer__tel {
+   color: #fff;
+}
