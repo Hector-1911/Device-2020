@@ -335,6 +335,46 @@
          </div>
       </div>
    </footer>
+   <!-- Модальные окна -->
+   <!-- Письмо -->
+   <div class="modal-message__wrap">
+      <section class="modal-message">
+         <h2 class="visually-hidden">Окно отправки письма</h2>
+         <div class="modal-message__close-btn-wrap">
+            <button class="modal-message__close-btn"></button> 
+         </div>
+         <form class="modal-message__form" action="" method="post">
+            <div class="modal-message__row">
+               <p class="modal-message__col">
+                  <label for="name">Ваше имя:</label>
+                  <input type="text" id="name" placeholder="Имя Фамилия">
+               </p>
+               <p class="modal-message__col">
+                  <label for="email">Ваш e-mail:</label>
+                  <input type="text" id="email" placeholder="email@example.com">
+               </p>
+            </div>
+            <div class="modal-message__row">
+               <p class="modal-message__col">
+                  <label for="text">Текст письма:</label>
+                  <textarea id="text" placeholder="В свободной форме"></textarea>
+               </p>
+            </div>
+            <button class="modal-message__submit button" type="submit">Отправить</button>
+         </form>
+      </section>
+   </div>
+   <!-- Карта -->
+   <div class="modal-map__wrap">
+      <section class="modal-map">
+         <div class="modal-map__close-btn-wrap">
+            <button class="modal-map__close-btn"></button> 
+         </div>
+         <div class="modal-map__img">
+            <img src="img/map-big.jpg" width="960" height="559" alt="">
+         </div>
+      </section>
+   </div>
 </body>
 
 </html>
