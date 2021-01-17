@@ -28,6 +28,8 @@ a {
 }
 
 .button {
+   padding: 0;
+
    font: inherit;
 
    text-align: center;
@@ -37,6 +39,13 @@ a {
    letter-spacing: 5px;
 
    border: none;
+}
+
+.container {
+   max-width: 1200px;
+   width: 100%;
+   padding: 0 20px;
+   margin: 0 auto;
 }
 
 /* --Стили помошники-- */
@@ -56,9 +65,21 @@ a {
 /* --Главная страница-- */
 
 /* -Шапка- */
+.header {
+   margin-top: 40px;
+}
+
+.header__inner {
+   max-width: 1040px;
+   width: 100%;
+   margin: 0 auto;
+}
 
 /* Поиск и личный кабинет */
 .header__top-row {
+   display: flex;
+   justify-content: space-between;
+
    font-family: "Open Sans", "Arial", sans-serif;
 
    font-size: 15px;
@@ -73,12 +94,27 @@ a {
 
 /* Личный кабинет */
 .header__user {
+   display: flex;
+   max-width: 500px;
+   width: 100%;
    padding: 0;
+   margin: 0;
 
    list-style: none;
 }
 
+.header__user-item:first-child {
+   margin-left: 27px;
+   margin-right: auto;
+}
+
+.header__user-item:last-child {
+   margin-left: 65px;
+}
+
 .header__user-button {
+   padding: 0;
+
    font: inherit;
 
    border: none;
@@ -86,12 +122,44 @@ a {
 }
 
 /* Навигация */
-.header__navigation-menu {
-   padding: 0;
+.header__navigation {
+   display: flex;
+   justify-content: space-between;
 
    text-transform: uppercase;
+}
+
+/* Меню */
+.header__navigation-menu-btn {
+   padding: 0;
+
+   font: inherit;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+
+   color: #000;
+   border: none;
+   background-color: transparent;
+}
+
+/* Список навигации */
+.header__navigation-list {
+   display: flex;
+   max-width: 500px;
+   width: 100%;
+   padding: 0;
+   margin: 0;
 
    list-style: none;
+}
+
+.header__navigation-list li + li {
+   margin-left: 33px;
+   margin-right: -5px;
+}
+
+.header__navigation-list li:last-child {
+   margin-left: auto;
 }
 
 .header__navigation-link {

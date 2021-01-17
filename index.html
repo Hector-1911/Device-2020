@@ -46,10 +46,12 @@
             <!-- Навигация -->
             <div class="header__bottom-row">
                <nav class="header__navigation">
-                  <ul class="header__navigation-menu">
-                     <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="">Каталог товаров</a>
-                     </li>
+                  <!-- Меню -->
+                  <div class="header__navigation-menu">
+                     <button class="header__navigation-menu-btn">Каталог товаров</button>
+                  </div>
+                  <!-- Список навигации -->
+                  <ul class="header__navigation-list">
                      <li class="header__navigation-item">
                         <a class="header__navigation-link" href="">Доставка</a>
                      </li>
@@ -341,7 +343,7 @@
       <section class="modal-message">
          <h2 class="visually-hidden">Окно отправки письма</h2>
          <div class="modal-message__close-btn-wrap">
-            <button class="modal-message__close-btn"></button> 
+            <button class="modal-message__close-btn"></button>
          </div>
          <form class="modal-message__form" action="" method="post">
             <div class="modal-message__row">
@@ -368,7 +370,7 @@
    <div class="modal-map__wrap">
       <section class="modal-map">
          <div class="modal-map__close-btn-wrap">
-            <button class="modal-map__close-btn"></button> 
+            <button class="modal-map__close-btn"></button>
          </div>
          <div class="modal-map__img">
             <img src="img/map-big.jpg" width="960" height="559" alt="">
