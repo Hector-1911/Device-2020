@@ -36,7 +36,7 @@ a {
    vertical-align: middle;
    color: #000;
    text-transform: uppercase;
-   letter-spacing: 5px;
+   letter-spacing: 4px;
 
    border: none;
 }
@@ -70,15 +70,29 @@ a {
 }
 
 .header__inner {
-   max-width: 1040px;
+   position: relative;
+
+   max-width: 1160px;
    width: 100%;
    margin: 0 auto;
+   padding: 40px 60px 50px 60px;
+
+   background-color: #f7e296;
+   box-shadow: 0 113px 0 0 #f7e296;
+}
+
+/* Логотип */
+.header__logo {
+   position: absolute;
+   left: 60px;
+   top: -17px;
 }
 
 /* Поиск и личный кабинет */
 .header__top-row {
    display: flex;
    justify-content: space-between;
+   margin-bottom: 50px;
 
    font-family: "Open Sans", "Arial", sans-serif;
 
@@ -134,7 +148,7 @@ a {
    padding: 0;
 
    font: inherit;
-   letter-spacing: 5px;
+   letter-spacing: 4px;
    text-transform: uppercase;
 
    color: #000;
@@ -164,7 +178,7 @@ a {
 
 .header__navigation-link {
    font: inherit;
-   letter-spacing: 5px;
+   letter-spacing: 4px;
 
    color: #000;
 }
@@ -172,14 +186,45 @@ a {
 /* -Основной контент- */
 
 /* Товар */
+.product__wrap {
+   max-width: 1040px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.product {
+   display: flex;
+   justify-content: space-between;
+}
+
+/* Фото товара */
+.product__image {
+   max-width: 440px;
+   width: 100%;
+   padding: 0 25px;
+
+   z-index: 100;
+}
 
 /* Описание товара */
+.product__info {
+   max-width: 500px;
+   width: 100%;
+   padding-right: 20px;
+   z-index: 100;
+}
 .product__title {
+   margin: 0;
+   margin-top: 80px;
+
    font-size: 47px;
    line-height: 56px;
 }
 
 .product__desc {
+   margin: 0;
+   margin-top: 25px;
+
    font-family: "Open Sans", "Arial", sans-serif;
 
    font-size: 15px;
@@ -187,13 +232,40 @@ a {
    font-weight: 300;
 }
 
-/* Слайдер */
+.product__info-row {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 45px;
+}
 
-/* Характеристики товара */
-.product__table {
+/* Слайдер */
+.product__slider-list {
+   display: flex;
+   justify-content: space-between;   
+   margin: 0;
    padding: 0;
 
    list-style: none;
+}
+
+.product-slider__link {
+   max-width: 220px;
+   width: 100%;
+}
+
+/* Характеристики товара */
+.product__table {
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
+   margin-top: 60px;
+   padding: 0;
+
+   list-style: none;
+}
+
+.product__table-col span {
+   display: block;
 }
 
 .product__table-stat {
@@ -205,6 +277,8 @@ a {
 }
 
 .product__table-type {
+   margin-top: 8px;
+
    font-family: "Open Sans", "Arial", sans-serif;
 
    font-size: 13px;
@@ -213,42 +287,85 @@ a {
 }
 
 /* Навигация по товарам */
+.product-type__wrap {
+   margin-top: 100px;
+}
 .product-type__menu {
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
    padding: 0;
 
    list-style: none;
 }
 
 .product-type__img {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 160px;
+   height: 160px;
+
    background-color: #f7e296;
 }
 
 .product-type__title {
+   width: 160px;
+   margin: 0;
+   margin-top: 30px;
+
    font: inherit;
 
    color: #000;
 }
 
 /* Услуги */
+.services-wrap {
+   margin-top: 80px;
+}
+.services {
+   display: flex;
+   justify-content: space-between;
+   padding: 73px 0;
+}
 
 /* Слайдер */
 .services__slider {
+   max-width: 280px;
+   width: 100%;
+   margin: 0;
    padding: 0;
 
    list-style: none;
 }
 
+.services__slider li + li {
+   margin-top: 40px;
+}
+
 .services__slider-btn {
+   max-width: 160px;
+   width: 100%;
+
    background-color: transparent;
 }
 
 /* Инфо */
+.services__content {
+   max-width: 760px;
+   width: 100%;
+}
 .services__content-title {
+   margin: 0;
+
    font-size: 47px;
    line-height: 48px;
 }
 
 .services__content-text {
+   margin: 0;
+   margin-top: 35px;
+
    font-family: "Open Sans", "Arial", sans-serif;
 
    font-size: 15px;
@@ -257,19 +374,39 @@ a {
 }
 
 /* Производители */
+.manufacturers__wrap {
+   margin-top: 170px;
+}
 .manufacturers__list {
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
    padding: 0;
 
    list-style: none;
 }
 
 /* Информация о нас */
+.about-us__wrap {
+   margin-top: 90px;
+}
+.about-us {
+   display: flex;
+   justify-content: space-between;
+   padding: 55px 0 90px 0;
+}
+
 .about-us h3 {
+   margin: 0;
+
    font-size: 47px;
    line-height: 48px;
 }
 
 .about-us p {
+   margin: 0;
+   margin-top: 40px;
+
    font-family: "Open Sans", "Arial", sans-serif;
 
    font-size: 15px;
@@ -278,7 +415,13 @@ a {
 }
 
 /* О нас */
+.about-us__desc {
+   max-width: 500px;
+   width: 100%;
+}
 .about__delivery {
+   margin: 0;
+   margin-top: 62px;
    padding: 0;
 
    font-size: 16px;
@@ -287,12 +430,36 @@ a {
    list-style: none;
 }
 
+.about__delivery-item {
+   padding-left: 35px;
+}
+
 .about__delivery-link {
    color: #000;
 }
 
+.about-us__btn {
+   display: block;
+   max-width: 260px;
+   width: 100%;
+   margin-top: 57px;
+
+   background-color: transparent;
+}
+
 /* Контакты */
+.about-us__contacts {
+   max-width: 560px;
+   width: 100%;
+}
+.about-us__contacts-map {
+   margin-top: 45px;
+}
 .about-us__contacts-btn {
+   max-width: 260px;
+   width: 100%;
+   margin-top: 65px;
+
    background-color: transparent;
 }
 
@@ -303,8 +470,40 @@ a {
    background-color: #464646;
 }
 
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+   padding: 65px 0;
+}
+
+.footer__left-col {
+   max-width: 325px;
+   width: 100%;
+}
+
+.footer__middle-col {
+   max-width: 440px;
+   width: 100%;
+}
+
+.footer__right-col {
+   display: flex;
+   flex-direction: column;
+   max-width: 325px;
+   width: 100%;
+   
+   font-family: "Open Sans", "Arial", sans-serif;
+
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 300;
+}
+
 /* Логотип и адрес компании */
 .footer__address {
+   display: block;
+   margin-top: 25px;
+
    font-family: "Open Sans", "Arial", sans-serif;
 
    font-size: 15px;
@@ -314,6 +513,10 @@ a {
 
 /* Услуги */
 .footer__services {
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
+   margin-top: 72px;
    padding: 0;
 
    list-style: none;
@@ -329,27 +532,32 @@ a {
 
 /* Социальные сети */
 .footer__socials {
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
    padding: 0;
 
    list-style: none;
 }
 
 /* Личный кабинет и телефон компании */
-.footer__right-col {
-   font-family: "Open Sans", "Arial", sans-serif;
-
-   font-size: 15px;
-   line-height: 30px;
-   font-weight: 300;
-}
 
 .footer__user {
+   display: flex;
+   margin: 0;
+   margin-left: auto;
    padding: 0;
 
    list-style: none;
 }
 
+.footer__user li + li {
+   margin-left: 63px;
+}
+
 .footer__user-btn {
+   padding: 0;
+
    font: inherit;
 
    color: #fff;
@@ -359,7 +567,15 @@ a {
 }
 
 .footer__tel {
+   margin-top: 37px;
+   margin-left: auto;
+
    color: #fff;
+}
+
+.footer__mini-logo {
+   margin-top: 65px;
+   margin-left: auto;
 }
 
 /* --Страница каталога-- */
@@ -506,12 +722,56 @@ a {
 /* -Модальные окна- */
 
 /* Письмо */
+.modal-message__wrap {
+   max-width: 960px;
+   width: 100%;
+   margin: 0 auto;
+}
+
 .modal-message {
+   position: relative;
+
+   max-width: 960px;
+   width: 100%;
+   padding: 90px 0 80px 0;
+
    background-color: #fff;
+}
+
+.modal-message p {
+   margin: 0;
+}
+
+.modal-message__close-btn-wrap {
+   position: absolute;
+   top: 22px;
+   right: 22px;
+   
+   width: 55px;
+   height: 55px;
+}
+
+.modal-message__form {
+   max-width: 760px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.modal-message__top-row {
+   display: flex;
+   justify-content: space-between;
+}
+
+.modal-message__col {
+   display: block;
 }
 
 .modal-message__col input[type="text"],
 .modal-message__col textarea {
+   display: block;
+   width: 360px;
+   padding: 17px 20px;
+
    font-family: "Open Sans", "Arial", sans-serif;
 
    font-size: 14px;
@@ -522,6 +782,27 @@ a {
    background-color: #f2f2f2;
 }
 
+.modal-message__col textarea {
+   width: 100%;
+   height: 155px;
+}
+
 .modal-message__submit {
+   display: block;
+   max-width: 200px;
+   width: 100%;
+   margin-top: 45px;
+
    background-color: transparent;
+}
+
+/* Карта */
+.modal-map__wrap {
+   max-width: 960px;
+   width: 100%;
+   margin: 0 auto;
+}
+.modal-map {
+   max-width: 960px;
+   width: 100%;
 }
