@@ -110,8 +110,34 @@ a {
 }
 
 /* Поиск */
+.header__search-form {
+   position: relative;
+}
+
+.header__search-form label {
+   position: absolute;
+   content: "";
+   top: 50%;
+   left: 3px;
+
+   width: 16px;
+   height: 16px;
+
+   background-image: url('../svg/search.svg');
+   background-repeat: no-repeat;
+   background-position: left center;
+
+   transform: translateY(-50%);
+}
+
 .header__search-form input[name="search"] {
+   margin-left: 40px;
+
    font: inherit;
+
+   border: none;
+   background-color: transparent;
+   outline: none;
 }
 
 /* Личный кабинет */
@@ -125,6 +151,11 @@ a {
    list-style: none;
 }
 
+.header__user-item {
+   display: flex;
+   align-items: center;
+}
+
 .header__user-item:first-child {
    margin-left: 27px;
    margin-right: auto;
@@ -135,12 +166,44 @@ a {
 }
 
 .header__user-button {
+   position: relative;
+
    padding: 0;
 
    font: inherit;
 
    border: none;
    background-color: transparent;
+   outline: none;
+
+   cursor: pointer;
+}
+
+.header__user-button::before {
+   position: absolute;
+   content: "";
+   top: 50%;
+   left: -25px;
+
+   width: 14px;
+   height: 14px;
+
+   background-repeat: no-repeat;
+   background-position: left center;
+
+   transform: translateY(-50%);
+}
+
+.header__user-login::before {
+   background-image: url('../svg/user.svg');
+}
+
+.header__user-compare::before {
+   background-image: url('../svg/compare.svg');
+}
+
+.header__user-basket::before {
+   background-image: url('../svg/cart.svg');
 }
 
 /* Навигация */
